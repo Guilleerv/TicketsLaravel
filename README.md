@@ -1,5 +1,12 @@
 # TicketsLaravel
 
+## Supuestos para la Solución
+
+Para la solución implementada se utilizarán 3 tablas:
+1. Tabla events: contiene los datos de los eventos
+2. Tabla users: contiene los datos del usuario que realiza la compra
+3. Tabla purchases: contiene los datos de la compra (id de usuario e id del evento)
+
 ## Ejecución de la Solución
 
 ### 1. Configuración de Variables de Entorno
