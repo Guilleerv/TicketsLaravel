@@ -9,7 +9,7 @@ class EventController extends Controller
 {
     public function index()
     {
-        $events = Event::all();
+        $events = Event::select('titulo', 'fecha', 'ubicacion')->get();
         return response()->json($events, 200);
     }
 
