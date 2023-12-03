@@ -11,7 +11,7 @@ Para la solución implementada se utilizarán 3 tablas:
 
 ### 1. Configuración de Variables de Entorno
 
-Modifica las variables de entorno en el archivo `.env` según la configuración de tu base de datos. Aquí tienes un ejemplo para una base de datos MySQL llamada `tickets`:
+Se deben modificar las variables de entorno en el archivo `.env` según la configuración de tu base de datos. Aquí tienes un ejemplo para una base de datos MySQL llamada `tickets`:
 
 ```env
 DB_CONNECTION=mysql
@@ -24,7 +24,7 @@ DB_PASSWORD=
 
 ### 2. Migración de la Base de Datos
 
-Ejecuta el siguiente comando en la consola para aplicar las migraciones de la base de datos:
+Ejecutar el siguiente comando en la consola para aplicar las migraciones de la base de datos:
 
 ```bash
 php artisan migrate
@@ -32,7 +32,7 @@ php artisan migrate
 
 ### 3. Iniciar el Servidor Laravel
 
-Inicia el servidor Laravel ejecutando el siguiente comando:
+Iniciar el servidor Laravel ejecutando el siguiente comando:
 
 ```bash
 php artisan serve
