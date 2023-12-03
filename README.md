@@ -11,7 +11,7 @@ Para la solución implementada se utilizarán 3 tablas:
 
 ### 1. Configuración de Variables de Entorno
 
-Se deben modificar las variables de entorno en el archivo `.env` según la configuración de tu base de datos. Aquí tienes un ejemplo para una base de datos MySQL llamada `tickets`:
+Se deben modificar las variables de entorno en el archivo `.env` según la configuración de tu base de datos. Aquí hay un ejemplo para una base de datos MySQL llamada `tickets`:
 
 ```env
 DB_CONNECTION=mysql
