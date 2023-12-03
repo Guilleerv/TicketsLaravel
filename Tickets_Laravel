@@ -1,0 +1,433 @@
+{
+	"info": {
+		"_postman_id": "368f7342-3fa0-43fc-b1d4-fbcac140c2e8",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31564667"
+	},
+	"item": [
+		{
+			"name": "Get Events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/events"
+			},
+			"response": [
+				{
+					"name": "Events",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/events"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Dec 2023 20:15:07 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Dec 2023 20:15:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IlU5ZHdteGhCTlVpc3krSDAzZkM0a2c9PSIsInZhbHVlIjoiU2NsSXZVOEZuaTdaWm1tR1NRcGo5dFpSbnVseEU0emxWa0hmd2JVMHBxSUVLVzBhbGpVQ0pla055WDA1UFU2R011djdaWFA5TVRpNTNzcWNMV3Z5cmhLZjBxenRkdlRLRlQrMlJLV1diaWVZdmJVRTNkQXQ2VmQ5cDBPOFlRcW8iLCJtYWMiOiI1MDFiZGJjMDM1YWM4MmQyZWE4ZTNmMWEzMTAxMmQ5NzM5NmZhZmViOTFjMTg4NjZkZDBkOGVhNmE2MTgwOTM4IiwidGFnIjoiIn0%3D; expires=Sun, 03 Dec 2023 22:15:07 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6ImVVUVFvUkxxOXRSUHhVdThDRHgzdVE9PSIsInZhbHVlIjoicDNzS05kSHM2NEV0KytObmZwZTZKQmxHQXlZRHFmRzBBMEJpcUUxNkVxSEhaRnhRUzZJNjFZZ24xN2Y0WlpMR081dUs5NkxKZ0lBL2pYZ3A0b0p0RC9WNVNTa2lCQklpMTA4aCttYm9iK2txaWpUTkFFdGpjaUIvb1FiVmtDZEoiLCJtYWMiOiIwODZmZmVmMmMyMjliOTViNDMwYzYwZDM3YWRlZTNjYWI5YTEwNmQyZGU2MTJjM2ZmNmM2NjM0ZDA5NTg3MzNiIiwidGFnIjoiIn0%3D; expires=Sun, 03 Dec 2023 22:15:07 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"titulo\": \"Concierto\",\n        \"fecha\": \"2023-12-01 18:00:00\",\n        \"ubicacion\": \"Concepcion\"\n    },\n    {\n        \"titulo\": \"Festival\",\n        \"fecha\": \"2023-12-01 18:00:00\",\n        \"ubicacion\": \"Talca\"\n    },\n    {\n        \"titulo\": \"Fiesta del vino\",\n        \"fecha\": \"2023-12-01 18:00:00\",\n        \"ubicacion\": \"Palmilla\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Event {id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/events/1"
+			},
+			"response": [
+				{
+					"name": "{1}",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/events/1"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Dec 2023 19:57:22 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Dec 2023 19:57:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6InMrempKaXJ2eW9hcGc4Q1RSMEFrZFE9PSIsInZhbHVlIjoialB3T2t5bkRyalJtNU1ZVm1memQrbjUyd2g3aGJMTlREcE1GYW8vcWtMVStacldzT3hOblI0aU0rczFGL3FqYmluaExYNjhFQUhLaXZJeEE4QUExejA2N05qSXN4VWxCY0ZsV09SSnFVZWI4L3NsU1EwU3l0Vk5jMTAyN09mMU0iLCJtYWMiOiJmY2Y2YThhYzQzOTY5MjNlNjcxNWY5ZjZmMzAwNjZhNDg4NDQ0NzFmZDRhN2VmNWRlZjI5ZjNjZTBhMzk1MjIyIiwidGFnIjoiIn0%3D; expires=Sun, 03 Dec 2023 21:57:22 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6ImQzWFNFakQ3a1NHbGNIK1hQcERqSUE9PSIsInZhbHVlIjoiMlMzcW94em1mcWVZa3BOY1VDUVYvYVNKWVY4L1VPUHFQRVhGS0tCa25zNFlNVDlCOWc4SytUbE9HM0ZkcHJ1K0EwNHFHMjFOalQyYmRKNGUzTExleHpiQksvbmZJM0xTaGZURTU1UDRMZUhuREFwSVJIcHp4YkVaS01UK2hrZDkiLCJtYWMiOiIxMTgxMGY0YWI1NjZhOGJlMzY5ZmMzOTVjMzA4M2MwNDZmYzcwNTUzOWJiNWUxMGYzM2Y2ODI3NTIyZTZkODFiIiwidGFnIjoiIn0%3D; expires=Sun, 03 Dec 2023 21:57:22 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"titulo\": \"Concierto\",\n    \"descripcion\": \"Concierto de musica\",\n    \"fecha\": \"2023-12-01 18:00:00\",\n    \"entrada\": \"Entrada Gratuita\",\n    \"ubicacion\": \"Concepcion\",\n    \"created_at\": \"2023-12-03T16:56:09.000000Z\",\n    \"updated_at\": \"2023-12-03T16:56:09.000000Z\"\n}"
+				},
+				{
+					"name": "{2}",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/events/2"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Dec 2023 19:57:22 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Dec 2023 19:57:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6InMrempKaXJ2eW9hcGc4Q1RSMEFrZFE9PSIsInZhbHVlIjoialB3T2t5bkRyalJtNU1ZVm1memQrbjUyd2g3aGJMTlREcE1GYW8vcWtMVStacldzT3hOblI0aU0rczFGL3FqYmluaExYNjhFQUhLaXZJeEE4QUExejA2N05qSXN4VWxCY0ZsV09SSnFVZWI4L3NsU1EwU3l0Vk5jMTAyN09mMU0iLCJtYWMiOiJmY2Y2YThhYzQzOTY5MjNlNjcxNWY5ZjZmMzAwNjZhNDg4NDQ0NzFmZDRhN2VmNWRlZjI5ZjNjZTBhMzk1MjIyIiwidGFnIjoiIn0%3D; expires=Sun, 03 Dec 2023 21:57:22 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6ImQzWFNFakQ3a1NHbGNIK1hQcERqSUE9PSIsInZhbHVlIjoiMlMzcW94em1mcWVZa3BOY1VDUVYvYVNKWVY4L1VPUHFQRVhGS0tCa25zNFlNVDlCOWc4SytUbE9HM0ZkcHJ1K0EwNHFHMjFOalQyYmRKNGUzTExleHpiQksvbmZJM0xTaGZURTU1UDRMZUhuREFwSVJIcHp4YkVaS01UK2hrZDkiLCJtYWMiOiIxMTgxMGY0YWI1NjZhOGJlMzY5ZmMzOTVjMzA4M2MwNDZmYzcwNTUzOWJiNWUxMGYzM2Y2ODI3NTIyZTZkODFiIiwidGFnIjoiIn0%3D; expires=Sun, 03 Dec 2023 21:57:22 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"titulo\": \"Concierto\",\n    \"descripcion\": \"Concierto de musica\",\n    \"fecha\": \"2023-12-01 18:00:00\",\n    \"entrada\": \"Entrada Gratuita\",\n    \"ubicacion\": \"Concepcion\",\n    \"created_at\": \"2023-12-03T16:56:09.000000Z\",\n    \"updated_at\": \"2023-12-03T16:56:09.000000Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Purchase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_cliente\": 1,\r\n    \"id_evento\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/purchase"
+			},
+			"response": [
+				{
+					"name": "Ejemplo1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_cliente\": 2,\r\n    \"id_evento\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/purchase"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Dec 2023 19:57:44 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Dec 2023 19:57:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6InI0SVpLM0U1cTdneFp6SWErY3ZST0E9PSIsInZhbHVlIjoialpiZjRndjB0aHBKMU5YVzgxNUdsT2xsVGFoYVpDWVRJdCtieStiVU9OQk9zTURRamVmZ0NaSWhwcXEzTmFwVXNseXp3WmlnZ2tkN2xJZzJNY2locGc2TDRVNmQrbDhEeG9SR0JGdi9YUjY3Qkd1VVY1c1hYa1NZdGdidSs1RTciLCJtYWMiOiI4OGIzZGQyMmQyY2VkYTIyNjQ4MmFmYmI5MTMwMDMxOGE2MjI4OThjNzgwOTRkODNmZmNiZjQxMTZlMDFmNzkzIiwidGFnIjoiIn0%3D; expires=Sun, 03 Dec 2023 21:57:44 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6ImhHY3ZDS1dROFNPSWpLZ2ZyUEF2c1E9PSIsInZhbHVlIjoiQ1l0QzBCbmg3T0RZaE10TU90cjcwWi9PMDZhSDVHVnk4eE10V3g3N1BMMEFHWlJFKzBiKzRWaW93UEN2dlRTKzhFNWc4Q3RKWUh6NnF5MVEyL2FkSjBaKzJQTFFQMXFMbUN1R3J2b1R5dXhnQTRuaXpHVmtiZ085UzlITVRDRDciLCJtYWMiOiJhN2ExN2FiNTM5NjliNGJlZjVmMjU5Zjc5N2NiNWU0YWVmYjI0ZTQyN2Y1ZTI2MGFiMzZkZjUxMDU3ZDdmMTk3IiwidGFnIjoiIn0%3D; expires=Sun, 03 Dec 2023 21:57:44 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id_cliente\": 2,\n    \"id_evento\": 2,\n    \"updated_at\": \"2023-12-03T19:57:44.000000Z\",\n    \"created_at\": \"2023-12-03T19:57:44.000000Z\",\n    \"id\": 3\n}"
+				},
+				{
+					"name": "Ejemplo2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_cliente\": 1,\r\n    \"id_evento\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/purchase"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Dec 2023 20:05:15 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Dec 2023 20:05:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IjVZbFp6ZCt6UHNSYVI2cFdtYmtQZEE9PSIsInZhbHVlIjoiZUMvaEovbTJZTFhXSFo2U3ppcW5RcmwvdDBvZy9nazl3YWdYMGdLeVB1NjRLV0xsb1FwQ1lEcGRxUnI4MEo3bklldTBXdlZvdndMZkZZenFhQXUvNk9sTmtPNTBQSGxRMEZGNnVRRUlsQjZmVGhCWFBMT0VsQzJ5NHhvd2RqMEMiLCJtYWMiOiI0OTg4OTBlNDUyMDk3YzA3NWM2MGU5NjRlYmU2Mzc5ZTY4YzYwNWZlNTZlZTA4OTMzYzkzYTk3MzJlNWQ3ODE1IiwidGFnIjoiIn0%3D; expires=Sun, 03 Dec 2023 22:05:15 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6InBRd1RNL0t3VzFaTnhwTk9VYmFnL2c9PSIsInZhbHVlIjoiT2ZrZlFqVG5rUUpqbEp2N21tekZHZDhJSFI0aG80dGROSWZFWGhKc1NHZ21PQ0R4MlBaZ0MrSHlqQkRON0Z6Sy9jWDFGR2VZNGVzL3JJeXpBcmFhcWp1VWhNOWpVd3RXZkJIVnRlVDZXTWU1WWF3SzduZEFUa3V0WXRrREJzeTIiLCJtYWMiOiJiOTk4NDljNzRmOTIyNjZlZDk3OWE4MGUxOWQyY2M4MjM5YzA1OGY0Y2FjNTcyYjdiYzY4NDg1YTBhYWM4ZDYyIiwidGFnIjoiIn0%3D; expires=Sun, 03 Dec 2023 22:05:15 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id_cliente\": 1,\n    \"id_evento\": 3,\n    \"updated_at\": \"2023-12-03T20:05:15.000000Z\",\n    \"created_at\": \"2023-12-03T20:05:15.000000Z\",\n    \"id\": 4\n}"
+				}
+			]
+		},
+		{
+			"name": "Listar Ordenes",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "{1}",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/orders/1"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Dec 2023 19:57:48 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Dec 2023 19:57:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IkhuSlhQZ1pDcGN1bTNxeGh0UjZsK0E9PSIsInZhbHVlIjoiUDNiTFl0Z29wYXFWNkdGYjlLVGt1QVQ2d2lBRjhvOWw1TUEwOVB6RDF3U1NPallPRjlSQTNVeFM4NmdpaCtXU08vbmEyMW1XVXlLaWt0OVFPc2NCRXdhWTQ4YjM1OEJ2Y3cranFTN1Zka3VNVW4vTmxZR2tzMjlEVWp5Z0w4SGUiLCJtYWMiOiI4ZDVkOTdiMTdhNWJjNWZmNDRjM2ZiMGYyYzg5ZDgzMmZkZTU1OGFmNDE5ZjkwOGQ3NGUxNThjMmRkY2UwNzEyIiwidGFnIjoiIn0%3D; expires=Sun, 03 Dec 2023 21:57:48 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6IkxkbnBHKytYaTdhS0dKbU10MHF1eEE9PSIsInZhbHVlIjoiTUtSc1BhQlZ1RElLMVRoS0Q4VWR0c3ZLa1pYVWtjaHpXUW5HNVRweGp4aGFia2twRWY1K0E5SUc5VnMyOXpUKytweWJYeXNXTldXNnFMRjFZUzhkQVNXNTBaM1p2UzVLY1RCWmJZWjdLdzI4Z0M4SmkySzVDQUpZbHg1YldxbjciLCJtYWMiOiJkY2E0NDJkNjlkN2Y4ZDRjMWJjZGExMDU1MTQ3YmU1N2MxMjBlNWZiNmI2YjgyZWJiODRmNjk4NDc4M2ZkY2ZkIiwidGFnIjoiIn0%3D; expires=Sun, 03 Dec 2023 21:57:48 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"id_cliente\": 1,\n        \"id_evento\": 1,\n        \"created_at\": \"2023-12-03T19:57:26.000000Z\",\n        \"updated_at\": \"2023-12-03T19:57:26.000000Z\",\n        \"event\": {\n            \"id\": 1,\n            \"titulo\": \"Concierto\",\n            \"descripcion\": \"Concierto de musica\",\n            \"fecha\": \"2023-12-01 18:00:00\",\n            \"entrada\": \"Entrada Gratuita\",\n            \"ubicacion\": \"Concepcion\",\n            \"created_at\": \"2023-12-03T16:56:09.000000Z\",\n            \"updated_at\": \"2023-12-03T16:56:09.000000Z\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"id_cliente\": 1,\n        \"id_evento\": 2,\n        \"created_at\": \"2023-12-03T19:57:38.000000Z\",\n        \"updated_at\": \"2023-12-03T19:57:38.000000Z\",\n        \"event\": {\n            \"id\": 2,\n            \"titulo\": \"Festival\",\n            \"descripcion\": \"Festival de canto\",\n            \"fecha\": \"2023-12-01 18:00:00\",\n            \"entrada\": \"Entrada Gratuita\",\n            \"ubicacion\": \"Talca\",\n            \"created_at\": \"2023-12-03T16:56:10.000000Z\",\n            \"updated_at\": \"2023-12-03T16:56:10.000000Z\"\n        }\n    }\n]"
+				},
+				{
+					"name": "{2}",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/orders/2"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Dec 2023 20:05:28 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Dec 2023 20:05:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6Im11c28rN21VU09mZlFsQzVndWlNL0E9PSIsInZhbHVlIjoiMTd6VlY3cjBQR0Q2SXBKbHBTVGRSWko3LzBFaGlXOU5ZbEhvd0FVRS9hdHU2dEZKNmpnVS83SkMzSGM3R2ZHWi9VRWRLOVZjbkdMSElEdUlXY1hCNk14c011aE5XUnVNNWdhSmIrY2w4T1lxK09xZTVZTFVXcC9rSHFEZFp1bGUiLCJtYWMiOiI4MmUxNDA1MzdiNjE4NWU5NjY2ODAxN2FlMmM1YmE0Zjc1MGVhNWFiNDU4NDQ0NWI1NjE4YTg3ODkzNmM3NGQxIiwidGFnIjoiIn0%3D; expires=Sun, 03 Dec 2023 22:05:28 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6IjB5dzVOYk9sVmFqRXhsQytrcUlMRFE9PSIsInZhbHVlIjoiVTZQejd1UFl4K0plMDFpSGRlVWFWeExkeVdwODlzODFva2FDM0RheVEzcmFKMmlHMHQrWlF5ckg1WGVGT0tFOHUrenJNcXR0NFZvVEdYZDE4S0gySCtvZUl4MHBSU0tCZ1BqSE5pQU1hQ2NpTEQ1TU81dC84OUo1cXd0OUJYRzMiLCJtYWMiOiIzY2JkOWU3YWI4ZDJjNDM0ZjdjMzVhNDcxYTA5MjdjMWMwOTE5OGU0ZmI1NDE1YWM2OWZjNzBkNWUyYzdiOGViIiwidGFnIjoiIn0%3D; expires=Sun, 03 Dec 2023 22:05:28 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"id_cliente\": 2,\n        \"id_evento\": 2,\n        \"created_at\": \"2023-12-03T19:57:44.000000Z\",\n        \"updated_at\": \"2023-12-03T19:57:44.000000Z\",\n        \"event\": {\n            \"id\": 2,\n            \"titulo\": \"Festival\",\n            \"descripcion\": \"Festival de canto\",\n            \"fecha\": \"2023-12-01 18:00:00\",\n            \"entrada\": \"Entrada Gratuita\",\n            \"ubicacion\": \"Talca\",\n            \"created_at\": \"2023-12-03T16:56:10.000000Z\",\n            \"updated_at\": \"2023-12-03T16:56:10.000000Z\"\n        }\n    }\n]"
+				}
+			]
+		}
+	]
+}
